@@ -1,0 +1,77 @@
+Personaje -> Enano -> fieles-> Thorin
+Personaje -> Enano -> infieles-> Gloin
+Personaje -> Humano -> Bilson
+Personaje -> Humano -> Gandalf
+Personaje -> Humano -> Narrador
+Personaje -> Humano -> Habitante1
+Personaje -> Humano -> LíderCiudad
+Personaje -> Humano -> Bard
+Personaje -> Elfos -> DeLaLuz -> Elrond
+Personaje -> Elfos -> Silvanos -> Thranduil
+
+
+ESCENAS:
+
+Escena 1: La reunión en Rivendel
+
+Gandalf: Tenemos que encontrar la manera de cruzar las Montañas Nubladas.
+Thorin: Deberíamos buscar el consejo de Elrond. Él conoce estos senderos.
+Bilbo: ¿De verdad? Bueno, supongo que podríamos preguntarle.
+Thranduil:Espera un momento. ¿Por qué deberíamos confiar en ellos?
+Gloin:Tenemos un problema más grande. Los trolls han robado nuestras provisiones.
+Elrond:Los trolls son un peligro, pero no más que la Gran Montaña Solitaria. Debemos unir fuerzas.
+
+////////APARECERÁ UNA OPCION DE PELEAR CON LOS TROLLS O IR AL BOSQUE NEGRO////////////////
+
+Escena 2: Enfrentando a los Trolls
+
+Elrond:Tenemos que ser cautelosos. Los trolls son fuertes.
+Bilbo:¿Y si volvemos a Rivendel? Esto es peligroso.
+Thorin:No podemos regresar ahora. Debemos enfrentarlos.
+Thranduil:Tal vez Bilbo tiene razón. Quizás debamos volver a Rivendel.
+
+////////APARECE OPCION DE VOLVER A LA ESCENA ANTERIOR///////////////
+
+Escena 3: Encuentro con los Elfos Silvanos
+
+Gandalf: Hemos entrado en el Bosque Negro. No será fácil navegar aquí.
+Elrond: Quizás Thranduil y sus elfos puedan ayudarnos.
+Thranduil: Está bien, pero solo si prometen no causar problemas.
+Gloin: ¿Qué podría salir mal?
+
+Escena 4: Enfrentando a las Arañas Gigantes
+
+Bilbo: ¡Arañas gigantes! ¡Tenemos que huir!
+Gloin: ¡Mantén la calma y luchemos juntos!
+Thranduil: ¡Nosotros también podemos luchar!
+
+Escena 5: El Conflicto en el barril
+
+Gloin:¡Bilbo está herido! Debemos encontrar refugio.
+Thorin:Los barriles. Ahí podemos resguardarnos y cuidar de Bilbo.
+Gandalf:Tienen razón. Los barriles son nuestra única esperanza.
+Bilbo: ¡Esto es emocionante y aterrador a la vez!
+Elrond: Deberíamos llegar a la Ciudad del Lago y recuperar la Montaña Solitaria.
+Gandalf: Pero Smaug es un dragón peligroso.
+
+Escena 6: La Ciudad del Lago
+
+Narrador: El grupo llega a la Ciudad del Lago en los barriles. Los habitantes de la ciudad se sorprenden al verlos y los ayudan a sacar a Bilbo del agua
+Habitante 1:¡Miren a estos viajeros inusuales! ¿Qué les trae a nuestra ciudad?
+Thorin: Estamos en busca de la Montaña Solitaria y su tesoro.
+Habitante 1: Tengan cuidado, la Montaña está protegida por el dragón Smaug.
+Bilbo: ¿Dónde estamos?
+Narrador: El grupo se instala en la Ciudad del Lago y decide buscar información sobre cómo llegar a la Montaña Solitaria
+
+Escena 7: El Consejo en Esgaroth
+
+Líder de la Ciudad:La Montaña Solitaria es un lugar peligroso. Pero si están dispuestos a intentarlo, necesitarán información.
+Elrond: ¿Hay alguien en esta ciudad que conozca los senderos hacia la Montaña?
+Gandalf: Necesitamos aliados y un mapa detallado.
+Líder de la Ciudad: Conozco a alguien que podría ayudarlos. Un hombre llamado Bard.
+
+Escena 8: La Alianza con Bard
+
+Bard: La Montaña Solitaria es un lugar maldito, pero entiendo su deseo. Conozco los senderos y puedo ayudarlos.
+Bilbo: ¡Gracias, Bard!
+Thorin: Ahora tenemos un aliado. ¡Nos dirigiremos a la Montaña!
