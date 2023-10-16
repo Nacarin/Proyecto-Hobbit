@@ -24,7 +24,7 @@ export class Escena3 extends Escena {
         this.aventura.bilbo.hablar("Sí, tal vez tenga un poco de coraje después de todo.");
     }
 
-    decision(personajes){
+    decision(){
         //realiza un confirm con una pregunta para aceptar o cancelar
         let escenaElegida = super.confirmacion("Si pulsas aceptar vas a la escena 1, sino a la 2")
         //Si aceptas va a una opción si cancelas a la otra
