@@ -38,11 +38,3 @@ export class Escena3 extends Escena {
         }
     }
 }
-
-export function cambio1(){
-    escena1.decision(personajes);
-};
-
-export function cambio2(){
-    escena2.decision(personajes);
-};

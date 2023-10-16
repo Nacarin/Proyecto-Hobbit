@@ -29,9 +29,5 @@ export class Escena1 extends Escena {
         this.aventura.gandalf.hablar("Pero Bilbo, ¿no has soñado nunca con explorar el mundo más allá de la Comarca?");
     }
 
-
-
-   
-
 }
 
