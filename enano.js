@@ -14,7 +14,6 @@ export class Enano extends Personaje{
     constructor(nombre, clase=null, colorBarba = 'Blanca'){
         super(nombre, raza, clase)
         this.#colorBarba = colorBarba
-        // listaEnanos.push(nombre);
     }
 
     picar(){
