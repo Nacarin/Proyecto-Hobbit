@@ -10,7 +10,7 @@ export class Escena3 extends Escena {
         super(titulo, desc,aventura);
     }
 
-    iniciarEscena(personajes) {
+    iniciarEscena() {
         this.limpiarPantalla()
         this.mostrarTitulo()
         this.mostrarDescripcion()
