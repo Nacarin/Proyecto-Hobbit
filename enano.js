@@ -10,10 +10,11 @@ export class Enano extends Personaje{
     }
 
     #colorBarba = null
-
-    constructor(nombre, clase=null, colorBarba = 'Blanca'){
+    #fidelidad = null
+    constructor(nombre, clase=null, colorBarba = 'Blanca', fidelidad = null){
         super(nombre, raza, clase)
         this.#colorBarba = colorBarba
+        this.#fidelidad = fidelidad
     }
 
     picar(){
