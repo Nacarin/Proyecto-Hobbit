@@ -1,4 +1,6 @@
 import { Escena } from "./escenas.js"
+import { AventuraGundam } from "./gundam/aventura_gundam.js";
+
 //Importad vuestra escena aqui
 
 export class EscenaNexo extends Escena {
@@ -26,12 +28,12 @@ export class EscenaNexo extends Escena {
          * Aquí ofreceremos opciones que nos permitan ir a distintas rutas, por ahora serán 1, 2, 3 y 4 
          * pero cambiadlo por la opción que queráis para vuestra ruta, podemos añadir más o menos, no preocuparse por eso
          */
-        let escenaElegida = super.hacerPregunta("1, 2, 3 o 4") 
+        let escenaElegida = super.hacerPregunta("1(sueño gundam), 2, 3") 
         switch (escenaElegida) {
             case '1':  
             //Cambiad esto por vuestra escena
-                let escenaW = new EscenaW(this.aventura);
-                escenaW.iniciarEscena();
+                let aventuraGundam = new AventuraGundam();
+                aventuraGundam.iniciarSuenho(this.aventura)
                 break;
             case '2':  
             //Cambiad esto por vuestra escena

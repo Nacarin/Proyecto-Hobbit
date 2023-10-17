@@ -6,6 +6,7 @@ import { Fiel } from "./fiel.js";
 import { Infiel } from "./infiel.js";
 import { DeLaLuz } from "./de_la_luz.js";
 import { Silvano } from "./silvano.js";
+import { EscenaNexo } from "./escena_nexo.js";
 
 export class Aventura{
     thorin = new Fiel('Thorin', clase_raza.claseGuerrero);
@@ -19,7 +20,7 @@ export class Aventura{
     thranduil = new Silvano('Thranduil')
     
     iniciarAventura(){
-        const escena1 = new Escena1(this);
+        const escena1 = new EscenaNexo(this);
         escena1.iniciarEscena();
     }
 }
