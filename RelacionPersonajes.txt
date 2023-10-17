@@ -1,6 +1,6 @@
 Personaje -> Enano -> fieles-> Thorin
 Personaje -> Enano -> infieles-> Gloin
-Personaje -> Humano -> Bilson
+Personaje -> hobbit -> Bilbo
 Personaje -> Humano -> Gandalf
 Personaje -> Humano -> Narrador
 Personaje -> Humano -> Habitante1
