@@ -2,20 +2,20 @@
 import { Objeto } from "./objeto.js";
 
 export class Personaje {
-    #nombre = null;
+    nombre = null;
     #raza = null;
     #clase = null;
     #inventario = null;
 
     constructor(nombre, raza, clase = null) {
-        this.#nombre = nombre;
+        this.nombre = nombre;
         this.#raza = raza;
         this.#clase = clase;
         this.#inventario = new Set();
     }
 
     hablar(texto) {
-        let textoMejorado = `<br/><b>${this.#nombre}:</b> "${texto}"`;
+        let textoMejorado = `<br/><b>${this.nombre}:</b> "${texto}"`;
         document.getElementById('divHistoria').innerHTML += textoMejorado;
     }
 
