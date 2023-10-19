@@ -12,9 +12,9 @@ export class MobileSuit extends Maquina{
     }
 
     pilotar(piloto){
-        if(piloto instanceof Personaje && piloto == null){
+        if(piloto instanceof Personaje && this.#piloto == null){
             this.#piloto = piloto
-            let textoPiloto = `<br/><i>${this.#piloto.nombre} se monta en el ${this.nombre}`;
+            let textoPiloto = `<br/><i>${this.#piloto.nombre} se monta en el ${this.nombre}</i>`;
             document.getElementById('divHistoria').innerHTML += textoPiloto;
         }
             
@@ -23,7 +23,7 @@ export class MobileSuit extends Maquina{
     bajarse(){
         if(this.#piloto instanceof Personaje)
         {
-            let textoBajarse = `<br/><i>${this.#piloto.nombre} se baja del ${this.nombre}`;
+            let textoBajarse = `<br/><i>${this.#piloto.nombre} se baja del ${this.nombre}</i>`;
             document.getElementById('divHistoria').innerHTML += textoBajarse;
             this.#piloto = null;
         }

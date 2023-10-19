@@ -1,10 +1,11 @@
+import { Flags } from "../flags.js";
 import { EscenaGundam } from "./escena_gundam.js";
 import { EscenaGundam2 } from "./escena_gundam2.js";
 
 export class EscenaGundam1 extends EscenaGundam {
 
     constructor(aventura, aventuraGundam) {
-        const titulo = "Sueño Gundam: Escena 1: Un mundo desconocido";
+        const titulo = "Un mundo desconocido";
         const desc = "Bilbo y Frodo aparecen en una llanura desolada, en el horizonte se puede observar la silueta de un robot gigante.";
         super(titulo, desc, aventura, aventuraGundam);
     }

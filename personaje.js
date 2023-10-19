@@ -34,5 +34,13 @@ export class Personaje {
         this.#inventario.delete(objeto);
         personaje.coger(objeto);
     }
+
+    pegarBofetada(personaje){
+        if (!(personaje instanceof Personaje)) {
+            throw 'Personaje inválido';
+        }
+        let texto = `<br/><i>${this.nombre} le pega una bofetada a ${personaje.nombre}</i>`;
+        document.getElementById('divHistoria').innerHTML += texto;
+    }
 }
 

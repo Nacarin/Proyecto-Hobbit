@@ -1,4 +1,5 @@
 import { Escena } from "./escenas.js"
+import { Flags } from "./flags.js";
 import { AventuraGundam } from "./gundam/aventura_gundam.js";
 
 //Importad vuestra escena aqui
@@ -19,6 +20,7 @@ export class EscenaNexo extends Escena {
         //para preguntar con un prompt (decicisiones con multiples escenas posibles)
         document.getElementById('cambiarEscena').onclick = () => this.decision();
 
+        
         // AQUI VA EL CONTENIDO
         
     }
@@ -42,13 +44,13 @@ export class EscenaNexo extends Escena {
                 break;
             case '3':  
             //Cambiad esto por vuestra escena
-                let escenaY = new EscenaY(this.aventura);
-                escenaY.iniciarEscena();
-                break;
-            case '4':  
-            //Cambiad esto por vuestra escena
-                let escenaZ = new EscenaZ(this.aventura);
-                escenaZ.iniciarEscena();
+                if(Flags.flagGundam&&Flags.flagIsekai){
+                    let escenaY = new EscenaY(this.aventura);
+                    escenaY.iniciarEscena();
+                }
+                else{
+                    alert("Debes pasar por los dos sueños antes de despertar")
+                }
                 break;
             default:
                 alert("Respuesta inválida")

@@ -20,7 +20,7 @@ export class Aventura{
     thranduil = new Silvano('Thranduil')
     
     iniciarAventura(){
-        const escena1 = new EscenaNexo(this);
+        const escena1 = new Escena1(this);
         escena1.iniciarEscena();
     }
 }
