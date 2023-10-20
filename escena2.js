@@ -5,8 +5,8 @@ import { Escena } from "./escenas.js"
 export class Escena2 extends Escena {
 
     constructor(aventura) {
-        const titulo = "Escena 2: Un inesperado encuentro"
-        const desc = "Descripcion escena 2"
+        const titulo = "Vuelta a casa"
+        const desc = " "
         super(titulo, desc, aventura);
     }
 
@@ -19,10 +19,10 @@ export class Escena2 extends Escena {
         document.getElementById('cambiarEscena').onclick = () => this.decision();
 
         // Diálogo y narración
-        this.aventura.gandalf.hablar("Bilbo, permíteme presentarte a Thorin Escudo de Roble y su compañía de enanos.");
-        this.aventura.bilbo.hablar("¡Enanos! ¿Qué hacen aquí?");
-        this.aventura.thorin.hablar("Hemos venido en busca de un ladrón valiente y astuto.");
-        this.aventura.bilbo.hablar("Pero yo no soy un ladrón.");
+        this.aventura.elrond.hablar("Tenemos que ser cautelosos. Los trolls son fuertes.");
+        this.aventura.bilbo.hablar("¿Y si volvemos a Rivendel? Esto es peligroso.");
+        this.aventura.thorin.hablar("No podemos regresar ahora. Debemos enfrentarlos.");
+        this.aventura.thranduil.hablar("Tal vez Bilbo tiene razón. Quizás debamos volver a Rivendel.");
     }
 
     decision(){

@@ -6,18 +6,23 @@ import { Fiel } from "./fiel.js";
 import { Infiel } from "./infiel.js";
 import { DeLaLuz } from "./de_la_luz.js";
 import { Silvano } from "./silvano.js";
+import {Troll} from "./troll.js";
 
 export class Aventura{
     thorin = new Fiel('Thorin', clase_raza.claseGuerrero);
     gloin = new Infiel('Gloin', null, "Roja");
     bilbo = new Hobbit('Bilbo', clase_raza.razaHobbit);
+    dwalin = new Hobbit('Dwalin', clase_raza.razaHobbit);
     gandalf = new Humano('Gandalf', clase_raza.claseMago);
     habitante1 = new Humano('Habitante de la ciudad');
     liderCiudad = new Humano('Líder de la ciudad');
     bardo = new Humano('Bardo', clase_raza.claseArquero)
     elrond = new DeLaLuz('Elrond')
     thranduil = new Silvano('Thranduil')
-    
+    tom = new Troll('Tom')
+    dori = new Fiel('Dori', clase_raza.claseClerigo)
+    fili = new Humano('fili', clase_raza.claseGuerrero)
+
     iniciarAventura(){
         const escena1 = new Escena1(this);
         escena1.iniciarEscena();

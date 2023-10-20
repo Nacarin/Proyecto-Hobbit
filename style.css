@@ -1,0 +1,76 @@
+/* Estilo del cuerpo de la página */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo del encabezado */
+h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #1a4a9c; /* Azul relacionado con El Hobbit */
+    margin: 20px 0;
+}
+
+/* Estilo del contenedor de escenas */
+#escenas {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del título de escena */
+#divTitulo {
+    font-size: 24px;
+    color: #1a4a9c;
+    margin: 0;
+}
+
+/* Estilo de la descripción de escena */
+#divDescripcion {
+    font-size: 16px;
+    color: #777;
+    margin: 10px 0;
+}
+
+/* Estilo del botón de cambiar escena */
+#cambiarEscena {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #1a4a9c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Cambio de color al pasar el ratón sobre el botón */
+#cambiarEscena:hover {
+    background-color: #0e2b5f;
+}
+
+/* Estilo del contenido de la historia */
+#divHistoria {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+/* Estilo de enlaces */
+a {
+    color: #1a4a9c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

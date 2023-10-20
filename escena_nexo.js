@@ -18,7 +18,10 @@ export class EscenaNexo extends Escena {
         document.getElementById('cambiarEscena').onclick = () => this.decision();
 
         // AQUI VA EL CONTENIDO
-        
+        this.aventura.bilbo.hablar("Estamos agotados y desanimados.")
+        this.aventura.dwalin.hablar("No hemos llegado tan lejos para rendirnos.")
+        this.aventura.gandalf.hablar("Tomemos un descanso y evaluemos nuestras opciones.")
+        this.aventura.bilbo.hablar("Duermen todos...")
     }
 
     decision(){

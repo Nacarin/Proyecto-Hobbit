@@ -1,12 +1,11 @@
-import { Escena1 } from "./escena1.js";
-import { Escena2 } from "./escena2.js";
+import { Escena4 } from "./escena4.js";
 import { Escena } from "./escenas.js"
 
 export class Escena3 extends Escena {
 
     constructor(aventura) {
-        const titulo = "Escena 3: La partida"
-        const desc = "Descripción escena 3"
+        const titulo = "La montaña Solitaria"
+        const desc = ""
         super(titulo, desc,aventura);
     }
 
@@ -15,26 +14,18 @@ export class Escena3 extends Escena {
         this.mostrarTitulo()
         this.mostrarDescripcion()
 
-        document.getElementById('cambiarEscena').onclick = () => this.decision();
+        document.getElementById('cambiarEscena').onclick = () => {
+            let escena4 = new Escena4(this.aventura);
+            escena4.iniciarEscena();
+        };
         
         //diálogo
-        this.aventura.thorin.hablar("Bilbo, tenemos un largo viaje por delante. La Montaña Solitaria es nuestro destino.");
-        this.aventura.bilbo.hablar("No sé si estoy preparado para esto. Aventuras no son lo mío.");
-        this.aventura.gloin.hablar("Pero amigo Bilbo, has demostrado ser valiente en el bosque.");
-        this.aventura.bilbo.hablar("Sí, tal vez tenga un poco de coraje después de todo.");
-    }
-
-    decision(){
-        //realiza un confirm con una pregunta para aceptar o cancelar
-        let escenaElegida = super.confirmacion("Si pulsas aceptar vas a la escena 1, sino a la 2")
-        //Si aceptas va a una opción si cancelas a la otra
-        if(escenaElegida){
-            let escena1 = new Escena1(this.aventura);
-            escena1.iniciarEscena();
-        } 
-        else{
-            let escena2 = new Escena2(this.aventura);
-            escena2.iniciarEscena();
-        }
+        this.aventura.gandalf.hablar("Hemos sobrevivido a muchas pruebas en nuestro viaje. Pero ahora debemos decidir nuestro próximo paso");
+        this.aventura.thorin.hablar("¿A qué te refieres, Gandalf?.");
+        this.aventura.gandalf.hablar("A lo que me refiero, Thorin, es que debemos discutir nuestro plan para entrar en la Montaña Solitaria y reclamar el tesoro que tanto anhelamos. ");
+        this.aventura.thorin.hablar("Sí, debemos ir a la por el dragon Smaug.");
+        this.aventura.bilbo.hablar("Pero ¿cómo podemos hacer eso? Smaug es un dragón temible, y no somos guerreros.");
+        this.aventura.gloin.hablar("Y si encontramos la piedra del Arca de Thrain, que hemos estado buscando, podría ser una ventaja adicional")
+        this.aventura.gandalf.hablar("¡Vamos a ellos a por la busqueda del dragon!")
     }
 }
