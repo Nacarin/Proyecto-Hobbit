@@ -29,7 +29,7 @@ export class Escena1 extends Escena {
     }
     decision(){
         //realiza un prompt con una indicación de la respuesta esperada
-        let escenaElegida = super.hacerPregunta("Deseas pelear con los trolls (1) o ir la montaña SOlitaria (2)")
+        let escenaElegida = super.hacerPregunta("Deseas pelear con los trolls (1) o ir la montaña Solitaria (2)")
         //Si coincide la respuesta con una de las opciones cambiamos de escena, si no alertamos de respuesta inválida
         switch (escenaElegida) {
             case '1':  

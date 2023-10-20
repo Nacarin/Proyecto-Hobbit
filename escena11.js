@@ -13,8 +13,8 @@ export class Escena11 extends Escena {
         this.mostrarTitulo()
         this.mostrarDescripcion()
 
-        document.getElementById('cambiarEscena').onclick = () => {
-        }
+        document.getElementById('cambiarEscena').remove()
+        
         this.aventura.thorin.hablar(" Lo hemos logrado, gracias a la valentía de todos. Erebor es nuevamente nuestro.")
         this.aventura.bilbo.hablar("Y todo gracias a la valentía y astucia de nuestros aliados")
         this.aventura.gandalf.hablar("Esta alianza demuestra que juntos somos más fuertes.")

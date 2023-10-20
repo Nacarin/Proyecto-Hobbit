@@ -8,8 +8,8 @@ import { AventuraGundam } from "./gundam/aventura_gundam.js";
 export class EscenaNexo extends Escena {
 
     constructor(aventura) {
-        const titulo = "Escena Nexo: Aquí se bifurcan las rutas"
-        const desc = "Descripcion escena nexo"
+        const titulo = "Un Momento de Agotamiento en el Viaje Épico"
+        const desc = "Agotados por la larga travesía, Bilbo, Dwalin y Gandalf se reúnen para discutir su situación."
         super(titulo, desc, aventura);
     }
 
@@ -34,9 +34,10 @@ export class EscenaNexo extends Escena {
          * Aquí ofreceremos opciones que nos permitan ir a distintas rutas, por ahora serán 1, 2, 3 y 4 
          * pero cambiadlo por la opción que queráis para vuestra ruta, podemos añadir más o menos, no preocuparse por eso
          */
-        let escenaElegida = super.hacerPregunta("1(sueño gundam), 2(sueño isekai), 3(despertar)") 
+        let escenaElegida = super.hacerPregunta("Deseas tener un sueño sobre gundam (1), un sueño en un isekai (2) o despertar (3)") 
         switch (escenaElegida) {
             case '1':  
+                Flags.activarFlagGundam()
                 let aventuraGundam = new AventuraGundam();
                 aventuraGundam.iniciarSuenho(this.aventura)
                 break;
