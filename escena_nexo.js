@@ -1,4 +1,5 @@
 import { Escena } from "./escenas.js"
+import { Escena9 } from "./escena9.js"
 import { Flags } from "./flags.js";
 import { AventuraGundam } from "./gundam/aventura_gundam.js";
 

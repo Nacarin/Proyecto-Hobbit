@@ -7,6 +7,7 @@ import { Infiel } from "./infiel.js";
 import { DeLaLuz } from "./de_la_luz.js";
 import { Silvano } from "./silvano.js";
 import {Troll} from "./troll.js";
+import { Dragon } from "./dragon.js";
 
 export class Aventura{
     thorin = new Fiel('Thorin', clase_raza.claseGuerrero);
@@ -22,6 +23,8 @@ export class Aventura{
     tom = new Troll('Tom')
     dori = new Fiel('Dori', clase_raza.claseClerigo)
     fili = new Humano('fili', clase_raza.claseGuerrero)
+    smaug = new Dragon(`Smaug`, clase_raza.dragon)
+    narrador = new Humano('Narrador', clase_raza.razaHumano)
 
     iniciarAventura(){
         const escena1 = new Escena1(this);
