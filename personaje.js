@@ -2,20 +2,20 @@
 import { Objeto } from "./objeto.js";
 
 export class Personaje {
-    #nombre = null;
+    nombre = null;
     #raza = null;
     #clase = null;
     #inventario = null;
 
     constructor(nombre, raza, clase = null) {
-        this.#nombre = nombre;
+        this.nombre = nombre;
         this.#raza = raza;
         this.#clase = clase;
         this.#inventario = new Set();
     }
 
     hablar(texto) {
-        let textoMejorado = `<br/><b>${this.#nombre}:</b> "${texto}"`;
+        let textoMejorado = `<br/><b>${this.nombre}:</b> "${texto}"`;
         document.getElementById('divHistoria').innerHTML += textoMejorado;
     }
 
@@ -33,6 +33,14 @@ export class Personaje {
 
         this.#inventario.delete(objeto);
         personaje.coger(objeto);
+    }
+
+    pegarBofetada(personaje){
+        if (!(personaje instanceof Personaje)) {
+            throw 'Personaje inválido';
+        }
+        let texto = `<br/><i>${this.nombre} le pega una bofetada a ${personaje.nombre}</i>`;
+        document.getElementById('divHistoria').innerHTML += texto;
     }
 }
 

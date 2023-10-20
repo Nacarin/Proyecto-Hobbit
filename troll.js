@@ -3,9 +3,7 @@ import { Personaje } from "./personaje.js";
 
 export class Troll extends Personaje{
 
-    #tipo = null;
-    constructor(nombre, clase=null, tipo=null){
+    constructor(nombre, clase=null){
         super(nombre, raza, clase)
-        this.#tipo = tipo
     }
 }    
