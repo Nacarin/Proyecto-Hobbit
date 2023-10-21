@@ -5,7 +5,7 @@ import { EscenaIsekai } from "./escena_isekai.js";
 export class EscenaIsekai6 extends EscenaIsekai {
 
     constructor(aventura, aventuraIsekai) {
-        const titulo = "¿Sera este el final del hombre araña,digo de nuestros heroes?";
+        const titulo = "¿Será este el final del hombre araña, digo de nuestros héroes?";
         const desc = "Nuestros héroes luchan con valentía, pero el enfrentamiento con la mafia clandestina toma un giro trágico.";
         super(titulo, desc, aventura, aventuraIsekai);
     }
@@ -23,7 +23,7 @@ export class EscenaIsekai6 extends EscenaIsekai {
             // Agrega el elemento de imagen al documento
             document.body.appendChild(gifImage);      
             // Resto de tu código para cambiar la escena
-            alert("Nah era broma, todo es un sueño");
+            alert("Nah, era broma, todo es un sueño");
             Flags.activarFlagIsekai();
             let escenaNexo = new EscenaNexo(this.aventura);
             escenaNexo.iniciarEscena();
@@ -34,19 +34,15 @@ export class EscenaIsekai6 extends EscenaIsekai {
             }, 5000);
         };
         
-        this.aventura.thorin.hablar("Gandalf,haz algo con tu magia,yo no tengo aqui mis armas");
-        this.aventura.gandalf.hablar("Eso es lo que me gustaria,pero no soy capaz")
-        this.aventura.narrador.hablar("Mientras Gandalf y Thorin discuten que hacer una granada cae al lado de ellos")
-        this.aventura.gandalf.hablar("¿Que es esa cosa tan extraña?")
-        this.aventura.narrador.hablar("!!BOOOOOM¡¡")
-        this.aventura.thorin.hablar("Cof,cof,cof que demonios ha sido eso¿Gandalf donde estas?");
-        this.aventura.narrador.hablar("Cuando el polvo desaparece Thorin se queda con los ojos abiertos al ver el cuerpo en pedazos de su querido amigo Gandalf,intenta acercarse a el pero se da cuenta de que no tiene las piernas")
-        this.aventura.narrador.hablar("Uno de los mafiosos se acerca a el y le apunta con una escopeta.")
-        this.aventura.thorin.hablar("Santa diosa,en que infierno hemos caido...");
-        this.aventura.narrador.hablar("¡PUM!")
-        
-
+        this.aventura.thorin.hablar("Gandalf, haz algo con tu magia, yo no tengo aquí mis armas.");
+        this.aventura.gandalf.hablar("Eso es lo que me gustaría, pero no soy capaz.");
+        this.aventura.narrador.hablar("Mientras Gandalf y Thorin discuten qué hacer, una granada cae a su lado.");
+        this.aventura.gandalf.hablar("¿Qué es esa cosa tan extraña?");
+        this.aventura.narrador.hablar("¡BOOOM!");
+        this.aventura.thorin.hablar("Cof, cof, cof, ¿qué demonios ha sido eso? ¿Gandalf, dónde estás?");
+        this.aventura.narrador.hablar("Cuando el polvo desaparece, Thorin se queda con los ojos abiertos al ver el cuerpo en pedazos de su querido amigo Gandalf. Intenta acercarse a él pero se da cuenta de que no tiene las piernas.");
+        this.aventura.narrador.hablar("Uno de los mafiosos se acerca a él y le apunta con una escopeta.");
+        this.aventura.thorin.hablar("Santa diosa, ¿en qué infierno hemos caído?");
+        this.aventura.narrador.hablar("¡PUM!");
+    }
 }
-}
-
-

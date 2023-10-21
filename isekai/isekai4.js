@@ -20,12 +20,11 @@ export class EscenaIsekai4 extends EscenaIsekai {
             escenaIsekai5.iniciarEscena();
         };
 
-        this.aventura.bilbo.hablar("Este sitio es muy extraño,huele muy mal,me recuerda a las guaridas de las ratas.");
-        this.aventura.thorin.hablar("Parecen las catacumbas enanas");
+        this.aventura.bilbo.hablar("Este sitio es muy extraño. Huele muy mal y me recuerda a las guaridas de las ratas.");
+        this.aventura.thorin.hablar("Parecen las catacumbas enanas.");
         this.aventura.gandalf.hablar("En cada mundo hay lugares que deben explorarse con precaución. Sigamos avanzando, pero mantengámonos juntos.");
-        this.aventura.bilbo.hablar("¡Miren eso! Parece que hay un grupo de personas reuniéndose en ese callejón. ¿Deberiamos preguntarles?.");
-        this.aventura.thorin.hablar("Estoy de acuerdo.Pero vayamos con cuidado.");
-
-
+        this.aventura.bilbo.hablar("¡Miren eso! Parece que hay un grupo de personas reuniéndose en ese callejón. ¿Deberíamos preguntarles?");
+        this.aventura.thorin.hablar("Estoy de acuerdo. Pero vayamos con cuidado.");
     }
 }
+

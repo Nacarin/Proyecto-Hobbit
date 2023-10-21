@@ -5,7 +5,7 @@ export class EscenaIsekai2 extends EscenaIsekai {
 
     constructor(aventura, aventuraIsekai) {
         const titulo = "Un encuentro inesperado";
-        const desc = "Bilbo, Gandalf, y Thorin entran en la escuela.";
+        const desc = "Bilbo, Gandalf y Thorin entran en la escuela.";
         super(titulo, desc, aventura, aventuraIsekai);
     }
 
@@ -20,14 +20,13 @@ export class EscenaIsekai2 extends EscenaIsekai {
             escenaIsekai3.iniciarEscena();
         };
 
-        this.aventura.thorin.hablar("¿Se supone que esto es una escuela?Es muy diferente a como son las enanas.");
+        this.aventura.thorin.hablar("¿Se supone que esto es una escuela? Es muy diferente a como son las enanas.");
         this.aventura.bilbo.hablar("Mi querido Gandalf, ¿dónde estamos? Esto no se parece en nada a la Comarca.");
         this.aventura.gandalf.hablar("Mis amigos, parece que hemos sido transportados a otro mundo. No tengo todas las respuestas, pero debemos adaptarnos y tomar decisiones sabias.");
-        this.aventura.bilbo.hablar("Pues sera mejor que salgamos al exterior de nuevo,aqui dentro no me siento comodo.");
-
-
+        this.aventura.bilbo.hablar("Pues será mejor que salgamos al exterior de nuevo, aquí dentro no me siento cómodo.");
     }
 }
+
 
 
 

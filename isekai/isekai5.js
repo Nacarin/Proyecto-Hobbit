@@ -1,5 +1,5 @@
 import { EscenaIsekai } from "./escena_isekai.js";
-import { EscenaIsekai6 } from "./isekai6.js"; // Ajusta la importación de la siguiente escena según tu estructura
+import { EscenaIsekai6 } from "./isekai6.js"; 
 
 export class EscenaIsekai5 extends EscenaIsekai {
 
@@ -17,23 +17,23 @@ export class EscenaIsekai5 extends EscenaIsekai {
         // Avanzar a la siguiente escena
         document.getElementById('cambiarEscena').onclick = () => this.avanzarEscenaSiguiente();
 
-        this.aventura.bilbo.hablar("Mirad,tienes cosas metalicas como la mia,les voy a preguntar a ver si saben lo que es.");
-        this.aventura.gandalf.hablar("Espera Bilbo,recuerda que esa cosa es peli...");
-        this.aventura.narrador.hablar("Pero era tarde,Bilbo habia hechado a correr hacia ellos con la pistola en la mano")
+        this.aventura.bilbo.hablar("Miren, tienen objetos metálicos como el mío. Voy a preguntarles para ver si saben lo que es.");
+        this.aventura.gandalf.hablar("Espera Bilbo, recuerda que esa cosa es peli...");
+        this.aventura.narrador.hablar("Pero era tarde. Bilbo había echado a correr hacia ellos con la pistola en la mano.");
 
         this.simularEnfrentamiento();
     }
 
     simularEnfrentamiento() {
-        this.aventura.bilbo.hablar("!Perdonen,un momento¡");
-        this.aventura.narrador.hablar("Los mafiosos al girarse vieron a un policia ridiculamente pequeño yendo hacia ellos con una pistola sacada");
-        this.aventura.narrador.hablar("En ese momento uno de ellos saco su propia pistola y le pego un tiro entre los ojos a Bilbo");
+        this.aventura.bilbo.hablar("¡Perdónenme, un momento!");
+        this.aventura.narrador.hablar("Los mafiosos al girarse vieron a un policía ridículamente pequeño yendo hacia ellos con una pistola en la mano.");
+        this.aventura.narrador.hablar("En ese momento, uno de ellos sacó su propia pistola y le disparó a Bilbo entre los ojos.");
 
         this.aventura.thorin.hablar("¡BILBOOOOO!");
-        this.aventura.narrador.hablar("Thorin se lanzo hacia ellos pero Gandalf lo cogio de la chaqueta y lo puso a salvo detras de la esquina,mientras los mafiosos empezaron a dispararles");
+        this.aventura.narrador.hablar("Thorin se lanzó hacia ellos, pero Gandalf lo cogió de la chaqueta y lo puso a salvo detrás de la esquina, mientras los mafiosos comenzaron a dispararles.");
 
-        this.aventura.thorin.hablar("!Que haces Gandalf,hay que ir a por Bilbo,esa magia extraña le ha dado de lleno y no se mueve¡");
-        this.aventura.gandalf.hablar("!Tranquilizate¡,si corremos hacia ellos asi sin mas nos ocurrira lo mismo")
+        this.aventura.thorin.hablar("¿Qué haces, Gandalf? Tenemos que ir a por Bilbo. Esa magia extraña le ha dado de lleno y no se mueve.");
+        this.aventura.gandalf.hablar("¡Tranquilízate! Si corremos hacia ellos así sin más, nos ocurrirá lo mismo.");
     }
 
     avanzarEscenaSiguiente() {

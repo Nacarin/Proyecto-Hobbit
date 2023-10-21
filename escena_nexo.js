@@ -2,6 +2,7 @@ import { Escena } from "./escenas.js"
 import { Escena9 } from "./escena9.js"
 import { Flags } from "./flags.js";
 import { AventuraGundam } from "./gundam/aventura_gundam.js";
+import { AventuraIsekai } from "./isekai/aventura_isekai.js";
 
 //Importad vuestra escena aqui
 
@@ -44,8 +45,8 @@ export class EscenaNexo extends Escena {
             case '2':  
             //Cambiad esto por vuestra escena
                 Flags.activarFlagIsekai()
-                // let escenaX = new EscenaX(this.aventura);
-                // escenaX.iniciarEscena();
+                let aventuraIsekai = new AventuraIsekai();
+                aventuraIsekai.iniciarSuenho(this.aventura)
                 break;
             case '3':  
                 if(Flags.flagGundam&&Flags.flagIsekai){

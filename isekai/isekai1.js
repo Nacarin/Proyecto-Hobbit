@@ -1,4 +1,4 @@
-import { Flags} from "../flags.js";
+import { Flags } from "../flags.js";
 import { EscenaIsekai } from "./escena_isekai.js";
 import { EscenaIsekai2 } from "./isekai2.js";
 
@@ -21,9 +21,9 @@ export class EscenaIsekai1 extends EscenaIsekai {
             escenaIsekai2.iniciarEscena();
         };
 
-        this.aventura.gandalf.hablar("¿Donde se supone que estamos?");
-        this.aventura.bilbo.hablar("Miren eso, parece una escuela,y esos edificios,¿por que son tan altos?,ademas que es esta ropa tan rara que tengo ¡No entiendo nada!");
+        this.aventura.gandalf.hablar("¿Dónde se supone que estamos?");
+        this.aventura.bilbo.hablar("Miren eso, parece una escuela, y esos edificios, ¿por qué son tan altos? Además, ¿qué es esta ropa tan rara que tengo? ¡No entiendo nada!");
         this.aventura.gandalf.hablar("Debemos encontrar respuestas. Sigamos adelante.");
     }
-
 }
+

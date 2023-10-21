@@ -1,5 +1,5 @@
 import { EscenaIsekai } from "./escena_isekai.js";
-import {Narrador} from "../narrador.js"
+import { Narrador } from "../narrador.js";
 import { EscenaIsekai4 } from "./isekai4.js";
 
 export class EscenaIsekai3 extends EscenaIsekai {
@@ -21,13 +21,12 @@ export class EscenaIsekai3 extends EscenaIsekai {
             escenaIsekai4.iniciarEscena();
         };
 
-        this.aventura.bilbo.hablar("¿Que es esta cosa de hierro tan rara?pesa mucho y parece hecha para sujetarse con una mano.");
-        this.aventura.narrador.hablar("Mientras Bilbo manipulaba el arma esta se dispara contra el suelo accidentalmente.")
-        this.aventura.gandalf.hablar("¡Cuidado Bilbo parece ser algun tipo de magia extraña!");
-        this.aventura.bilbo.hablar("¡Repampano!Tendre mas cuidado,¿Que clase de mundo es este que alguien como yo ha hecho magia sin ser un mago?");
-        this.aventura.gandalf.hablar("Tengamos cuidado,si tu has podido cualquiera podria hacerlo.");
-        this.aventura.thorin.hablar("A mi me impresionan mas esos extraños caballos metalicos,van muy rapido,deberiamos salir de este sitio e ir a algun lugar mas protegido.");
-
-
+        this.aventura.bilbo.hablar("¿Qué es esta cosa de hierro tan rara? Pesa mucho y parece hecha para sujetarse con una mano.");
+        this.aventura.narrador.hablar("Mientras Bilbo manipulaba el arma, esta se dispara contra el suelo accidentalmente.");
+        this.aventura.gandalf.hablar("¡Cuidado, Bilbo! Parece ser algún tipo de magia extraña.");
+        this.aventura.bilbo.hablar("¡Repampano! Tendré más cuidado. ¿Qué clase de mundo es este en el que alguien como yo hace magia sin ser un mago?");
+        this.aventura.gandalf.hablar("Tengamos cuidado, si tú has podido, cualquiera podría hacerlo.");
+        this.aventura.thorin.hablar("A mí me impresionan más esos extraños caballos metálicos. Van muy rápido. Deberíamos salir de este sitio e ir a algún lugar más protegido.");
     }
 }
+
