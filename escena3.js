@@ -5,7 +5,7 @@ export class Escena3 extends Escena {
 
     constructor(aventura) {
         const titulo = "La montaña Solitaria"
-        const desc = ""
+        const desc = "En las faldas de la Gran Montaña Solitaria, el grupo debatía su plan para enfrentar a Smaug. Bilbo expresó sus temores, Gloin aportó una esperanza y Gandalf instigó a la acción con un grito conjunto de ¡Vamos a por la búsqueda del dragón!"
         super(titulo, desc,aventura);
     }
 

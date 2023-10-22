@@ -5,7 +5,7 @@ export class Escena4 extends Escena {
 
     constructor(aventura) {
         const titulo = "Conflicto con los Trolls"
-        const desc = ""
+        const desc = "La compañía se adentró sigilosamente en el territorio de los trolls, pero Bilbo fue descubierto. La situación se volvió tensa cuando Tom se acercó, pero Thorin y los demás enanos saltaron en su defensa. "
         super(titulo, desc,aventura);
     }
 

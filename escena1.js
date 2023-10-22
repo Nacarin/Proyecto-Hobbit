@@ -6,7 +6,7 @@ export class Escena1 extends Escena {
 
     constructor(aventura) {
         const titulo = "La reunión en Rivendel";
-        const desc = "";
+        const desc = "La compañía, frente a las imponentes Montañas Nubladas, debatía sobre su ruta, mientras algunos cuestionaban la confianza en Elrond. Gloin les alertó sobre el robo de provisiones por trolls, pero Elrond abogó por la unión, y Bilbo, entusiasta, instó a la aventura.";
         super(titulo, desc, aventura);
     }
 
