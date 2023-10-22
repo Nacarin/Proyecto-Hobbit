@@ -38,9 +38,6 @@ export class EscenaGundamCalabozo1 extends EscenaGundam {
                 EscenaGundam4aa.iniciarEscena();
                 break;
             case 'esperar':
-                console.log(!this.aventuraGundam.esperaCalabozo >= this.aventuraGundam.esperaMax)
-                console.log(this.aventuraGundam.esperaCalabozo)
-                console.log(this.aventuraGundam.esperaMax)
 
                 if(!(this.aventuraGundam.esperaCalabozo++ >= this.aventuraGundam.esperaMax)) {
                     let escenaGundamCalabozo1 = new EscenaGundamCalabozo1(this.aventura,this.aventuraGundam);
