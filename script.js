@@ -1,10 +1,6 @@
-import { Aventura } from "./aventura.js";
+import { Aventura } from './aventura.js'
 
-console.log('Script cargado correctamente.');
+console.log('Script cargado correctamente.')
 
-
-
-let aventura = new Aventura();
+const aventura = new Aventura()
 aventura.iniciarAventura()
-
-

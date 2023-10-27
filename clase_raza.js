@@ -1,6 +1,6 @@
 export const claseMago = Symbol('Mago')
-export const claseGuerrero= Symbol('Guerrero')
-export const claseClerigo= Symbol('Clérigo')
+export const claseGuerrero = Symbol('Guerrero')
+export const claseClerigo = Symbol('Clérigo')
 export const claseSaqueador = Symbol('Saqueador')
 export const claseArquero = Symbol('Arquero')
 export const razaHumano = Symbol('Humano')

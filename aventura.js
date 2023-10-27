@@ -1,33 +1,33 @@
-import { Escena1 } from "./escena1.js";
-import * as clase_raza from "./clase_raza.js";
-import { Humano } from "./humano.js";
-import { Hobbit } from "./hobbit.js";
-import { Fiel } from "./fiel.js";
-import { Infiel } from "./infiel.js";
-import { DeLaLuz } from "./de_la_luz.js";
-import { Silvano } from "./silvano.js";
-import {Troll} from "./troll.js";
-import { Dragon } from "./dragon.js";
+import { Escena1 } from './escena1.js'
+import * as claseRaza from './clase_raza.js'
+import { Humano } from './humano.js'
+import { Hobbit } from './hobbit.js'
+import { Fiel } from './fiel.js'
+import { Infiel } from './infiel.js'
+import { DeLaLuz } from './de_la_luz.js'
+import { Silvano } from './silvano.js'
+import { Troll } from './troll.js'
+import { Dragon } from './dragon.js'
 
-export class Aventura{
-    thorin = new Fiel('Thorin', clase_raza.claseGuerrero);
-    gloin = new Infiel('Gloin', null, "Roja");
-    bilbo = new Hobbit('Bilbo', clase_raza.razaHobbit);
-    dwalin = new Hobbit('Dwalin', clase_raza.razaHobbit);
-    gandalf = new Humano('Gandalf', clase_raza.claseMago);
-    habitante1 = new Humano('Habitante de la ciudad');
-    liderCiudad = new Humano('Líder de la ciudad');
-    bardo = new Humano('Bardo', clase_raza.claseArquero)
-    elrond = new DeLaLuz('Elrond')
-    thranduil = new Silvano('Thranduil')
-    tom = new Troll('Tom')
-    dori = new Fiel('Dori', clase_raza.claseClerigo)
-    fili = new Humano('fili', clase_raza.claseGuerrero)
-    smaug = new Dragon(`Smaug`, clase_raza.dragon)
-    narrador = new Humano('Narrador', clase_raza.razaHumano)
+export class Aventura {
+  thorin = new Fiel('Thorin', claseRaza.claseGuerrero)
+  gloin = new Infiel('Gloin', null, 'Roja')
+  bilbo = new Hobbit('Bilbo', claseRaza.razaHobbit)
+  dwalin = new Hobbit('Dwalin', claseRaza.razaHobbit)
+  gandalf = new Humano('Gandalf', claseRaza.claseMago)
+  habitante1 = new Humano('Habitante de la ciudad')
+  liderCiudad = new Humano('Líder de la ciudad')
+  bardo = new Humano('Bardo', claseRaza.claseArquero)
+  elrond = new DeLaLuz('Elrond')
+  thranduil = new Silvano('Thranduil')
+  tom = new Troll('Tom')
+  dori = new Fiel('Dori', claseRaza.claseClerigo)
+  fili = new Humano('fili', claseRaza.claseGuerrero)
+  smaug = new Dragon('Smaug', claseRaza.dragon)
+  narrador = new Humano('Narrador', claseRaza.razaHumano)
 
-    iniciarAventura(){
-        const escena1 = new Escena1(this);
-        escena1.iniciarEscena();
-    }
+  iniciarAventura () {
+    const escena1 = new Escena1(this)
+    escena1.iniciarEscena()
+  }
 }

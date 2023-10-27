@@ -1,12 +1,12 @@
-export class Flags{
-    static flagGundam = false;
-    static flagIsekai = false;
+export class Flags {
+  static flagGundam = false
+  static flagIsekai = false
 
-    static activarFlagGundam(){
-        this.flagGundam = true;
-    }
+  static activarFlagGundam () {
+    this.flagGundam = true
+  }
 
-    static activarFlagIsekai(){
-        this.flagIsekai = true;
-    }
-} 
+  static activarFlagIsekai () {
+    this.flagIsekai = true
+  }
+}
